@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+    <title>movietime.go</title>
+    </head>
+
+    <body>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url('img /фонн.png');
+            }
+
+            .register {
+                width: 155px;
+                backdrop-filter:blur(10px);
+                color:#fbfbfb;
+                border:  5px solid rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                padding: 40px 70px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .input{
+                font-family:'Times New Roman';
+                font-size:medium;
+            }
+            .btn{
+                width:120px;
+                padding: 5px 5px;
+                border-radius: 20px;
+                }
+        </style>
+        
+      <div class="register">
+        <form>
+            <h2 style="font-family: sans-serif;" align="center">Registration</h2>
+
+            <div class="input">
+             <div>
+                Select a category:
+                <br>
+           <label>
+               <input type="radio" name="category" value="children"/>children
+           </label>
+           <label>
+               <input type="radio" name="category" value="adults"/>adults
+           </label>
+       </div>
+       <br>
+       <div>
+        Select a language:
+        <br>
+   <label>
+       <input  type="radio" name="language" value="russian"/>russian
+   </label>
+   <label>
+       <input type="radio" name="language" value="english"/>english
+   </label>
+</div>
+       <br>
+       <div>
+        <label for="text"><b>Username</b></label>
+        <input  class="btn" type="text" placeholder="Username" />
+    </div>
+    <div>
+    <label for="date"><b>Date of Birth</b></label>
+    <br>
+    <input class="btn"  type="date"/>
+</div>
+<div>
+    <label for="tel"><b>Enter your phone</b></label>
+    <br>
+    <input class="btn"  type="tel" placeholder="Enter phone"/>
+</div>
+            <div>
+                <label for="email"> <b>Email </b></label>
+                <br>
+                <input  class="btn" type="email" placeholder="Enter email" />
+            </div>
+            <div>
+                <label for="password"><b>Password</b></label>
+                <input  class="btn"  type="password" placeholder="Enter Password" />
+            </div> 
+            <br>
+        </div> 
+        <label>
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+          <br>
+          <br>
+          <div>
+            <input class="btn"  type="button" onclick="location.href='file:///Users/dorymarlenovna/Desktop/dariga_kalmakhanbet_movies/index1.html';"  style="font-family:sans-serif;"  value="Sign up" />
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
